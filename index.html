@@ -598,7 +598,7 @@
       applyContainerBackground(config.gamePageBgUrl);
       const parts = config.gameParts || [];
       viewContainer.innerHTML = `<div style="width:100%; padding:8px;"><h2 style="font-family:'Comic Sans MS','Comic Neue',cursive;">🎮 Game Parts</h2><div class="part-grid">${parts.map(p=>`<div class="part-card" data-part-id="${p.id}"><i class="fas fa-puzzle-piece"></i><h3>${p.name}</h3></div>`).join('')}</div></div>`;
-      document.querySelectorAll('.part-card').forEach(c=> c.addEventListener('click', ()=> setView('partDetail', c.dataset.partId)));//Bohes Made//
+      document.querySelectorAll('.part-card').forEach(c=> c.addEventListener('click', ()=> setView('partDetail', c.dataset.partId)));// Bohes Made
     }
 
     function renderPartDetailView() {
